@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 40px 10px 40px;
+    background-color: #DBAA99;
+}
+
+button:hover {
+    background-color: rgba(32, 31, 27, 0.4);
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+h2 {
+    padding: 10px;
+    margin: 10px;
+    font-family: Lora;
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    background-color: #1F1E19;
+    font-size: 20px;  
+}
+
+.header h3 {
+    color: white;
+    font-weight: normal;
+}
+
+.header ul a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.header ul a:hover {
+    text-decoration: underline;
+}
+
+.header button {
+    display: none;
+    padding: 10px;
+    background-color: #DBAA99;
+}
+
+
+.background {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(./dimitrije.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.right-floating-div-box {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 3%;
+    bottom: auto;
+    max-width: 350px;
+    margin-left: 0;
+    padding: 1rem 2rem;
+    background-color: rgba(161, 161, 161, 0.8);
+    color: #1F1E19;
+}
+
+.right-floating-div-box h1 {
+    font-size: 45px;
+    font-family: Lora, serif;
+}
+
+.right-floating-div-box p {
+    font-size: 20px;
+
+}
+
+#section2 {
+    height: 70vh;
+}
+
+#section2 h2 {
+    margin-top: 30px;
+}
+
+
+.underline {
+    height: 2px;
+    width: 200px;
+    background-color: #DBAA99;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-me-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.about-me {
+    max-width: 300px;
+    height: 55vh;
+    background-color: rgba(161, 161, 161, 0.15);
+    color: #1F1E19;
+    padding: 15px;
+
+}
+
+.about-me p {
+    font-size: 18px;
+}
+
+.about-me button {
+    width: 300px;
+}
+
+.skills h3 {
+    text-decoration: underline;
+}
+
+
+
+#section3 header {
+    margin-top: 15%;
+}
+
+
+.project-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+
+.project{ 
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.project p {
+    text-align: center;
+}
+
+.project h3 {
+    font-size: 25px;
+}
+
+.project img {
+    height: 200px;
+    width: 200px;
+}
+
+
+#section4 {
+    background-color: #1F1E19;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 95vh;
+}
+
+.contacts{
+    align-items: center;
+}
+
+
+.contacts a {
+        color: white;
+        text-decoration: underline;
+        margin-left: 5px;
+}
+
+.contacts a:hover{
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #1F1E19;
+    color: white;
+    text-align: right;
+    height: 5vh;
+    position: relative;
+}
+
+footer span {
+    position: absolute;
+    left: 0;
+    padding-left: 15px;
+  
+}
+
+
+footer span a {
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+footer p {
+    margin: 0;
+    font-family: Lora;
+    font-style: italic;
+    padding-right: 25px;
+
+}
+
+
+
+
+
