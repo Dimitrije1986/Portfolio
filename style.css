@@ -18,6 +18,8 @@ button {
     cursor: pointer;
     padding: 10px 40px 10px 40px;
     background-color: #DBAA99;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 button:hover {
