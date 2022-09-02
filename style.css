@@ -148,6 +148,7 @@ h2 {
     background-color: rgba(161, 161, 161, 0.15);
     color: #1F1E19;
     padding: 15px;
+    transition: all 2s ease;
 
 }
 
@@ -164,6 +165,20 @@ h2 {
 }
 
 
+.skills {
+     transition: all 2s ease;
+}
+
+.animated-a {
+     transform: translateX(-70%);
+     opacity: 0;
+}
+
+.animated-s {
+    transform: translateX(70%);
+    opacity: 0;
+}
+
 
 #section3 header {
     margin-top: 15%;
@@ -174,6 +189,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin-top: 15%;
+    transition: all 4s ease;
 }
 
 .project{ 
@@ -183,6 +199,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 
 }
 
@@ -197,6 +214,11 @@ h2 {
 .project img {
     height: 200px;
     width: 200px;
+}
+
+.animated-p {
+    transform: translateY(100%);
+    opacity: 0;
 }
 
 
