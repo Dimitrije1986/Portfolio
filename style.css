@@ -18,9 +18,8 @@ button {
     cursor: pointer;
     padding: 10px 40px 10px 40px;
     background-color: #DBAA99;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: 0.3s;
-    border-width: 0;
 }
 
 button:hover {
@@ -148,7 +147,9 @@ h2 {
     background-color: rgba(161, 161, 161, 0.15);
     color: #1F1E19;
     padding: 15px;
-    transition: all 2s ease;
+    /*animation-name: about-me;
+    animation-duration: 2s;
+    visibility: visible;*/
 
 }
 
@@ -165,19 +166,48 @@ h2 {
 }
 
 
-.skills {
-     transition: all 2s ease;
+/*.skills {
+     animation-name: skills;
+     animation-duration: 2s;
+     visibility: visible;
 }
 
-.animated-a {
-     transform: translateX(-70%);
-     opacity: 0;
+/*.animated-a {
+    animation-name: animated-a;
+    animation-duration: 2s;
+    visibility: visible;
 }
 
-.animated-s {
-    transform: translateX(70%);
-    opacity: 0;
+@keyframes about-me {
+    0% {
+        transform: translateX(-70%);
+         opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+     
 }
+
+/*.animated-s {
+    animation-name: animated-s;
+    animation-duration: 2s;
+    visibility: visible;
+}
+
+
+@keyframes skills {
+    0%{
+        transform: translateX(70%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+}*/
 
 
 #section3 header {
@@ -214,11 +244,6 @@ h2 {
 .project img {
     height: 200px;
     width: 200px;
-}
-
-.animated-p {
-    transform: translateY(100%);
-    opacity: 0;
 }
 
 
