@@ -18,7 +18,7 @@ button {
     cursor: pointer;
     padding: 10px 40px 10px 40px;
     background-color: #DBAA99;
-    border-radius: 20px;
+    border-radius: 30px;
     transition: 0.3s;
 }
 
@@ -52,10 +52,8 @@ h2 {
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: auto;
-    padding: 10px;
+    justify-content: space-between;
     background-color: #1F1E19;
     font-size: 20px;  
 }
@@ -63,24 +61,30 @@ h2 {
 .header h3 {
     color: white;
     font-weight: normal;
+    margin: 0; 
+    padding-left: 15px;
 }
 
-.header ul a {
-    margin-left: 15px;
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header a {  
+    padding: 15px;
     color: white;
-    text-decoration: none;
-
+    display: block;
 }
 
-.header ul a:hover {
+.header a:hover {
     text-decoration: underline;
 }
 
 .header button {
     display: none;
-    padding: 10px;
-    background-color: #DBAA99;
+    padding: 10px 30px 10px 30px;;
 }
+
 
 
 .background {
@@ -147,11 +151,19 @@ h2 {
     background-color: rgba(161, 161, 161, 0.15);
     color: #1F1E19;
     padding: 15px;
-    /*animation-name: about-me;
-    animation-duration: 2s;
-    visibility: visible;*/
+    transition: all 2s ease;
 
 }
+
+/*.slideFromLeft {
+    transform: translateX(-70%);
+    opacity: 0;
+}
+
+.slideFromRight {
+    transform: translateX(70%);
+    opacity: 0;
+}*/
 
 .about-me p {
     font-size: 18px;
@@ -165,49 +177,10 @@ h2 {
     text-decoration: underline;
 }
 
-
-/*.skills {
-     animation-name: skills;
-     animation-duration: 2s;
-     visibility: visible;
+.skills {
+      transition: all 2s ease;
 }
 
-/*.animated-a {
-    animation-name: animated-a;
-    animation-duration: 2s;
-    visibility: visible;
-}
-
-@keyframes about-me {
-    0% {
-        transform: translateX(-70%);
-         opacity: 0;
-    }
-    100% {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-     
-}
-
-/*.animated-s {
-    animation-name: animated-s;
-    animation-duration: 2s;
-    visibility: visible;
-}
-
-
-@keyframes skills {
-    0%{
-        transform: translateX(70%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-    
-}*/
 
 
 #section3 header {
