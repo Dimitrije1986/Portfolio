@@ -1,132 +1,151 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="./style.css">
-	<link rel="stylesheet" type="text/css" href="./responsive.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Lora">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Dimirije Krnic</title>
-</head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato|Lora"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dimirije Krnic</title>
+  </head>
   <body>
+    <div class="container">
+        <nav class="header">
+          <h3>Dimitrije Krnic</h3>
+          <ul>
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="#section3">Projects</a></li>
+            <li><a href="#section4">Contact</a></li>
+          </ul>
+          <button><img src="./icon/menu.png" alt="menu" /></button>
+        </nav>
+    </div>
+    <section id="section1" class="background container"> 
+     <div class="right-floating-div-box">
+        <h1>Hi, I'm Dimitrije</h1>
+        <p>
+          I am a web developer, who strives to create amazing websites, apps,
+          and services, that are simple, beautiful, and easy to use.
+        </p>
+        <button><a href="#section2" >Let's get started</a></button-->
+      </div>
+    </section>
 
-  	<div class="container">
-	  	<nav class="header">
-		  		<h3>Dimitrije Krnic</h3>
-		  		
-		  		<ul>
-				  		<li><a href="#section1" >Home</a></li>
-				  		<li><a href="#section2" >About</a></li>
-				  		<li><a href="#section3" >Projects</a></li>
-				  		<li><a href="#section4" >Contact</a></li>
-		  		</ul>
-					<button><img src="./icon/menu.png" alt="menu"></button>
-	  	</nav>
-  	</div>
+    <section id="section2" class="container">
+      <h2>About</h2>
+      <div class="underline"></div>
 
-  	<section id="section1" class="background container">
-		  	<div class="right-floating-div-box">
-			     <h1>Hi, I'm Dimitrije</h1>
-			     <p> I am a web developer, who strives to create amazing websites, apps, and services, that are simple, beautiful, and easy to use.</p>
-			     <!--button><a href="#section2" >Let's get started</a></button-->
-			  </div> 
-	  </section> 
+      <div class="about-me-wrapper">
+        <div class="about-me slideFromLeft">
+          <p>
+            That's me, Dimitrije Krnic. I love finding solutions as a front-end
+            developer. I'm eager to learn about new technologies and the web in
+            general. Really driven to increase my skills and knowledge.
+          </p>
+          <br />
+          <br />
+          <br />
+          <p>You may learn more about me by reading my resume.</p>
+          <button><a href="cv-dimitrije.pdf" target="_blanc">Resume</a></button>
+        </div>
 
-	  <section id="section2" class="container"> 
+        <div class="skills slideFromRight">
+          <div>
+            <h3>THE SKILLS I'M FAMILIAR WITH:</h3>
+            <h4>JAVASCRIPT</h4>
+            <h4>HTML</h4>
+            <h4>CSS</h4>
+            <h4>BOOTSTRAP</h4>
+          </div>
+          <div>
+            <h3>THE SKILLS I'M LEARNING:</h3>
+            <h4>ADVANCED JAVASCRIPT</h4>
+            <h4>REACT</h4>
+            <h4>NODE.JS</h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	  	<h2>About</h2>
-	  	<div class="underline"></div>
+    <section id="section3" class="container">
+      <header>
+        <h2>Projects</h2>
+        <div class="underline"></div>
+      </header>
 
-	  	<div class="about-me-wrapper"> 
+      <div class="project-wrapper">
+        <div class="project">
+          <img src="./icon/coding.png" />
+          <h3>Dance N Soul</h3>
+          <p>My first project and website.</p>
+          <button>
+            <a
+              href="https://dimitrije1986.github.io/Dance-N-Soul/"
+              target="_blanc"
+              >View project</a
+            >
+          </button>
+        </div>
 
-			  	<div class="about-me slideFromLeft">
-				  	 <p >That's me, Dimitrije Krnic. I love finding solutions as a front-end developer. I'm eager to learn about new technologies and the web in general. Really driven to increase my skills and knowledge.
-				  	 </p>
-				  	 <br>
-				  	 <br>
-				  	 <br> 	
-				  	  <p>You may learn more about me by reading my resume.</p>
-			  		  <button><a href="cv-dimitrije.pdf" target="_blanc">Resume</a></button>
-			  	</div>
+        <div class="project">
+          <img src="./icon/idea.png" />
+          <h3>JS-Project</h3>
+          <p>Small JavaScript project I created while learning it.</p>
+          <button>
+            <a
+              href="https://github.com/Dimitrije1986/JS-Projects"
+              target="_blanc"
+              >View project</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
 
-			    <div class="skills slideFromRight">
-					  	 	<div>
-							  	<h3>THE SKILLS I'M FAMILIAR WITH:</h3>
-							  	<h4>JAVASCRIPT</h4>
-							  	<h4>HTML</h4>
-							  	<h4>CSS</h4>
-							  	<h4>BOOTSTRAP</h4>
-				  	    </div> 
-				  	    <div>
-							  	<h3>THE SKILLS I'M LEARNING:</h3>
-							  	<h4>ADVANCED JAVASCRIPT</h4>
-							  	<h4>REACT</h4>
-							  	<h4>NODE.JS</h4>
-				  	   </div> 
-				  </div>
-		  </div>
-				  	 	
-	 </section>
+    <section id="section4" class="container">
+      <h2>Contact</h2>
+      <div class="underline"></div>
 
-	  <section id="section3" class="container">
-	  	<header>
-	  	  <h2>Projects</h2>
-	  	  <div class="underline"></div>
-	  	</header>
+      <div class="contacts">
+        <div>
+          <h4>EMAIL</h4>
 
-	  	<div class="project-wrapper">
-			  		<div class="project ">
-			  			<img src="./icon/coding.png">
-			  			<h3>Dance N Soul</h3>
-			  			<p>My first project and website.</p>
-			  			<button><a href="https://dimitrije1986.github.io/Dance-N-Soul/" target="_blanc">View project</a></button>
-			  		</div>
-			  
-				  	<div class="project">
-				  		  <img src="./icon/idea.png">
-				  			<h3>JS-Project</h3>
-				  			<p>Small JavaScript project I created while learning it.</p>
-				  			<button><a href="https://github.com/Dimitrije1986/JS-Projects" target="_blanc">View project</a></button>
-				  	</div>	
-	  	</div>
-	  </section>
+          <img src="./icon/email1.png" />
+          <a href="mailto:dimitrijekrnic@gmail.com" target="_blanc"
+            >dimitrijekrnic@gmail.com</a
+          >
+        </div>
+        <div>
+          <h4>LINKEDIN</h4>
+          <img src="./icon/ln-logo.png" />
+          <a
+            href="https://www.linkedin.com/in/dimitrije-krnic-91ba7321b/"
+            target="_blanc"
+            >Connect with me</a
+          >
+        </div>
+        <div>
+          <h4>GITHUB</h4>
+          <img src="./icon/github.png" />
+          <a href="https://github.com/Dimitrije1986" target="_blanc"
+            >Connect with me</a
+          >
+        </div>
+      </div>
+    </section>
 
-	  <section id="section4" class="container">
-	  			
-	  				<h2>Contact</h2>
-	  				<div class="underline"></div>
-	  			
-	  			<div class="contacts">
-	  				<div>
-	  					<h4>EMAIL</h4>
-	  					
-	  						<img src="./icon/email1.png">
-	  					  <a href="mailto:dimitrijekrnic@gmail.com"
-	  					  target="_blanc">dimitrijekrnic@gmail.com</a>
-	  					
-	  				</div>
-	  				<div>
-	  					<h4>LINKEDIN</h4>
-	  					<img src="./icon/ln-logo.png">
-	  					<a href="https://www.linkedin.com/in/dimitrije-krnic-91ba7321b/" target="_blanc">Connect with me</a>
-	  				</div>
-	  				<div>
-	  					<h4>GITHUB</h4>
-	  					<img src="./icon/github.png">
-	  					<a href="https://github.com/Dimitrije1986" target="_blanc">Connect with me</a>
-	  				</div>
-	  			</div>
+    <footer class="container">
+      <span>
+        <a href="#section1">Back to top &#8682;</a>
+      </span>
 
-	  </section>
+      <p>&copy;2022 Dimitrije Krnic</p>
+    </footer>
 
-	  <footer class="container">
-	  	<span>
-	  		  <a href="#section1">Back to top &#8682;</a>
-	  	</span>
-
-	  	<p>&copy;2022 Dimitrije Krnic</p>
-	  </footer> 
-
-	  <script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

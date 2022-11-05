@@ -1,132 +1,130 @@
 @media (max-width: 800px) {
-    button {
-        border-width: 0;
+  button {
+    border-width: 0;
+  }
 
-    }
+  .header button {
+    display: block;
+    background-color: transparent;
+  }
 
-    .header button {
-        display: block;
-        background-color: transparent;   
-    }
+  body {
+    letter-spacing: 0;
+  }
 
-    body {
-        letter-spacing: 0;
-    }
+  h2 {
+    font-size: 27px;
+  }
 
-    h2 {
-        font-size: 27px;
-    }
+  a {
+    font-size: 16px;
+  }
 
-    a {
-        font-size: 16px;
-    }
+  .header ul {
+    display: none;
+    background-color: rgba(161, 161, 161, 1);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 30px;
+    z-index: 5;
+    padding-left: 0px;
+  }
 
-    .header ul {  
-        display: none; 
-        background-color: rgba(161, 161, 161, 1);
-        position: absolute;
-        width: 100%;
-        left: 0;
-        right: 0;
-        top: 30px;
-        z-index: 5;
-        padding-left: 0px;
-    }
+  .header h3 {
+    font-size: 20px;
+  }
 
+  .background {
+    background-position: left;
+    z-index: 1;
+  }
 
-    .header h3 {
-        font-size: 20px;
-    }
+  .right-floating-div-box {
+    bottom: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .background {
-           z-index: 1;
-    }
+  .right-floating-div-box h1 {
+    font-size: 30px;
+  }
 
-    .right-floating-div-box {
-        bottom: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .right-floating-div-box p {
+    font-size: 15px;
+  }
 
-    .right-floating-div-box h1 {
-        font-size: 30px;
-    }
+  .right-floating-div-box button {
+    z-index: 2;
+  }
 
-   .right-floating-div-box p {
-         font-size: 15px;
-    }
+  #section2 {
+    height: 100%;
+  }
 
-    .right-floating-div-box button {
-       z-index: 2;
-    }
+  .about-me-wrapper {
+    flex-direction: column;
+    margin-left: 10px;
+  }
 
-    #section2 {
-        height: 100%;
-    }
+  .about-me {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .about-me-wrapper{
-         flex-direction: column;
-         margin-left: 10px;
-    }
+  .about-me p {
+    font-size: 15px;
+  }
 
-    .about-me {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .skills {
+    text-align: center;
+  }
 
-    .about-me p {
-        font-size: 15px;
-    }
+  .skills h3 {
+    font-size: 20px;
+  }
 
-    .skills {
-        text-align: center;
+  #section3 {
+    height: 100%;
+  }
 
-    }
-
-    .skills h3 {
-        font-size: 20px;
-    }
-
-    #section3 {
-        height: 100%;
-    }
-
-    #section3 header {
+  #section3 header {
     margin-top: 30px;
-}
+  }
 
-    .project-wrapper {
-        flex-direction: column;
-        margin-left: 10px;
-        margin-right: 10px;
-        height: 100%;
-        align-items: center;
-    }
+  .project-wrapper {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+    align-items: center;
+  }
 
-    .project{
-        width: 100%;
-        margin: 15px;
-    }
+  .project {
+    width: 100%;
+    margin: 15px;
+  }
 
-    .project h3 {
-        font-size: 18px;
-    }
+  .project h3 {
+    font-size: 18px;
+  }
 
-    .project img {
-        height: 125px;
-        width: 125px;
-    }
+  .project img {
+    height: 125px;
+    width: 125px;
+  }
 
-    footer p {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        padding-right: 15px;
-    }
+  footer p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 15px;
+  }
 
-    footer span {
-        bottom: 0;
-        padding-left: 10px;
-    }
+  footer span {
+    bottom: 0;
+    padding-left: 10px;
+  }
 }
