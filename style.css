@@ -311,15 +311,7 @@ form select {
 footer {
   background-color: #1f1e19;
   color: white;
-  text-align: right;
-  height: 5vh;
-  position: relative;
-}
-
-footer span {
-  position: absolute;
-  left: 0;
-  padding-left: 15px;
+  padding-bottom: 2%;
 }
 
 footer span a {
@@ -330,8 +322,8 @@ footer span a {
 }
 
 footer p {
+  text-align: center;
   margin: 0;
   font-family: Lora;
   font-style: italic;
-  padding-right: 25px;
 }
