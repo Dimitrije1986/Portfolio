@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" type="text/css" href="./responsive.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lato|Lora"
@@ -12,76 +12,63 @@
     <title>Dimirije Krnic</title>
   </head>
   <body>
-    <div class="container">
-        <nav class="header">
-          <h3>Dimitrije Krnic</h3>
-          <ul>
-            <li><a href="#section1">Home</a></li>
-            <li><a href="#section2">About</a></li>
-            <li><a href="#section3">Projects</a></li>
-            <li><a href="#section4">Contact</a></li>
-          </ul>
-          <button><img src="./icon/menu.png" alt="menu" /></button>
-        </nav>
-    </div>
-    <section id="section1" class="background container"> 
-     <div class="right-floating-div-box">
-        <h1>Hi, I'm Dimitrije</h1>
-        <p>
-          I am a web developer, who strives to create amazing websites, apps,
-          and services, that are simple, beautiful, and easy to use.
-        </p>
-        <button><a href="#section2" >Let's get started</a></button-->
+    <section id="section1" class="background">
+      <button><img src="./icon/menu.png" alt="menu" /></button>
+      <nav class="header">
+        <ul>
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Projects</a></li>
+          <li><a href="#section4">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="shadow">
+        <div class="floating-div-box">
+          <h1>Dimitrije Krnic</h1>
+          <h2>Web and JavaScript developer</h2>
+        </div>
       </div>
     </section>
 
-    <section id="section2" class="container">
-      <h2>About</h2>
+    <section id="section2">
+      <h2>About Me</h2>
       <div class="underline"></div>
 
       <div class="about-me-wrapper">
-        <div class="about-me slideFromLeft">
-          <p>
-            That's me, Dimitrije Krnic. I love finding solutions as a front-end
-            developer. I'm eager to learn about new technologies and the web in
-            general. Really driven to increase my skills and knowledge.
-          </p>
-          <br />
-          <br />
-          <br />
-          <p>You may learn more about me by reading my resume.</p>
-          <button><a href="cv-dimitrije.pdf" target="_blanc">Resume</a></button>
-        </div>
+        <img src="./slike/dimi.jpg" alt="Dimi" />
 
-        <div class="skills slideFromRight">
-          <div>
-            <h3>THE SKILLS I'M FAMILIAR WITH:</h3>
-            <h4>JAVASCRIPT</h4>
-            <h4>HTML</h4>
-            <h4>CSS</h4>
-            <h4>BOOTSTRAP</h4>
-          </div>
-          <div>
-            <h3>THE SKILLS I'M LEARNING:</h3>
-            <h4>ADVANCED JAVASCRIPT</h4>
-            <h4>REACT</h4>
-            <h4>NODE.JS</h4>
-          </div>
+        <div class="about-me">
+          <article>
+            <p>
+              Hi, I'm Dimitrije. <br />
+              <br />
+
+              I'm a web developer, devoted to the MERN stack. Currently, skilled
+              in HTML, CSS, and JavaScript, and the next goal being NodeJs and
+              React. Dedicated to continuous learning and improvement.
+
+              <br /><br />
+              I'll always seek opportunities to be inspired, to work hard for
+              worthwhile things, and to be around people that bring out the best
+              in me.
+              <br /><br />
+              Besides that, I'm enjoying in traveling, good books, rock music,
+              football, fabulous food, time with family, and beer with friends.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="section3" class="container">
-      <header>
-        <h2>Projects</h2>
-        <div class="underline"></div>
-      </header>
+    <section id="section3">
+      <h2>Projects</h2>
+      <div class="underline"></div>
 
-      <div class="project-wrapper">
+      <div class="project-wrapper container">
         <div class="project">
           <img src="./icon/coding.png" />
           <h3>Dance N Soul</h3>
-          <p>My first project and website.</p>
+          <p>Website made for my wife's dance school.</p>
           <button>
             <a
               href="https://dimitrije1986.github.io/Dance-N-Soul/"
@@ -106,56 +93,69 @@
       </div>
     </section>
 
-    <section id="section4" class="container">
+    <section id="section4">
       <h2>Contact me</h2>
       <div class="underline"></div>
-      <h3>Want to work with me, or just want to say hello?<br> Feel free to leave a friendly message here! </h3>
 
-    <div class="contact-wrraper">
-      <div class="contacts">
-        <div>
-          <h4>LINKEDIN</h4>
-          <img src="./icon/ln-logo.png" />
-          <a
-            href="https://www.linkedin.com/in/dimitrije-krnic-91ba7321b/"
-            target="_blanc"
-            >Connect with me</a
-          >
-        </div>
-        <div>
-          <h4>GITHUB</h4>
-          <img src="./icon/github.png" />
-          <a href="https://github.com/Dimitrije1986" target="_blanc"
-            >Connect with me</a
-          >
-        </div>
-      </div>
-      <form
-        action="https://formspree.io/f/xjvzjjnq"
-         method="POST">
-         <label>
+      <h3>
+        Want to work with me, or just want to say hello?<br />
+        Feel free to leave a friendly message here.
+      </h3>
+
+      <form action="https://formspree.io/f/xjvzjjnq" method="POST">
+        <label>
           Name:
-          <input type="text" name="name" required>
+          <input
+            class="clean-area"
+            type="text"
+            onfocus="this.value=''"
+            name="name"
+            required
+          />
         </label>
-          <label>
-            Your email:
-            <input type="email" name="email" required>
-          </label>
-          <label>
-            Your message:
-            <textarea name="message" placeholder="Hi there! 🖐"></textarea>
-          </label>
-          <button type="submit">Send</button>
-        </form>
+        <label>
+          Your email:
+          <input
+            class="clean-area"
+            type="email"
+            onfocus="this.value=''"
+            name="email"
+            required
+          />
+        </label>
+        <label>
+          Your message:
+          <textarea
+            class="clean-area"
+            name="message"
+            placeholder="Hi there! 🖐"
+          ></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="contacts">
+        <a
+          href="https://www.linkedin.com/in/dimitrije-krnic-91ba7321b/"
+          target="_blanc"
+        >
+          <img src="./icon/ln-logo.png"
+        /></a>
+
+        <a href="https://github.com/Dimitrije1986" target="_blanc">
+          <img src="./icon/github.png"
+        /></a>
+
+        <a href="cv-dimitrije.pdf" target="_blanc">View my resume</a>
       </div>
     </section>
 
-    <footer class="container">
+    <footer>
       <span>
         <a href="#section1">Back to top &#8682;</a>
       </span>
 
-      <p>&copy;2022 Dimitrije Krnic</p>
+      <p>Dimitrije Krnic &copy;2022</p>
     </footer>
 
     <script src="script.js"></script>

@@ -17,8 +17,7 @@ section {
 button {
   cursor: pointer;
   padding: 10px 40px 10px 40px;
-  background-color: #dbaa99;
-  border-radius: 30px;
+  background-color: #878686;
   transition: 0.3s;
 }
 
@@ -33,12 +32,16 @@ a {
 }
 
 h2 {
-  padding: 10px;
-  margin: 10px;
-  font-family: Lora;
-  font-size: 35px;
-  letter-spacing: 1.5px;
+  margin: 0;
+  font-size: 2rem;
   text-align: center;
+}
+
+.underline {
+  height: 1px;
+  width: 200px;
+  background-color: #808080;
+  margin: 2rem;
 }
 
 .container {
@@ -46,29 +49,22 @@ h2 {
   margin: auto;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgba(161, 161, 161, 0.47);
-}
-
-.header h3 {
-  color: rgb(3, 3, 3);
-  font-weight: normal;
-  margin: 0;
-  padding-left: 15px;
-  font-size: 20px;
-}
-
 .header ul {
-  display: flex;
+  display: none;
+  background-color: #0c0c0cd5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  width: 35%;
+  height: 100%;
   list-style: none;
+  margin: 0;
 }
 
 .header a {
-  padding: 15px;
-  color: rgb(1, 1, 1);
+  padding: 1rem;
+  color: #fff;
   display: block;
 }
 
@@ -76,9 +72,18 @@ h2 {
   text-decoration: underline;
 }
 
-.header button {
-  display: none;
-  padding: 10px 30px 10px 30px;
+.background button {
+  padding: 2rem;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  z-index: 10;
+}
+
+.background button:hover {
+  padding: 1rem;
 }
 
 .background {
@@ -86,94 +91,111 @@ h2 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-image: url(./dimitrije.jpg);
+  background-image: url(./slike/code1.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.right-floating-div-box {
+h1 {
+  font-size: 6em;
+  color: rgb(255, 255, 255);
+}
+
+.background h2 {
+  color: #fff;
+  text-align: left;
+}
+
+.shadow {
+  height: 100%;
+  width: 100%;
+  background: #010101cf;
+}
+
+.floating-div-box {
   position: absolute;
-  left: auto;
-  top: auto;
-  right: 3%;
+  left: 2%;
+  top: 20%;
+  right: auto;
   bottom: auto;
-  max-width: 350px;
+  max-width: 50%;
   margin-left: 0;
   padding: 1rem 2rem;
-  background-color: rgba(161, 161, 161, 0.7);
-  color: #1f1e19;
+  background-color: #0c0c0cd7;
 }
 
-.right-floating-div-box h1 {
-  font-size: 45px;
-  font-family: Lora, serif;
-}
-
-.right-floating-div-box p {
-  font-size: 20px;
-}
-
-#section2 {
-  height: 70vh;
-}
-
-#section2 h2 {
-  margin-top: 30px;
-}
-
-.underline {
-  height: 2px;
-  width: 200px;
-  background-color: #dbaa99;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+.floating-div-box p {
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 /***** ABOUT ME ****/
 
+#section2 {
+  background-color: #131313ed;
+}
+
+#section2 h2 {
+  font-size: 6rem;
+  font-weight: 400;
+  padding: 2rem;
+  text-align: left;
+  color: #fff;
+}
+
 .about-me-wrapper {
   display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.about-me-wrapper img {
+  padding: 1rem;
+  border-radius: 50%;
 }
 
 .about-me {
-  max-width: 300px;
-  height: 55vh;
-  background-color: rgba(161, 161, 161, 0.15);
-  color: #1f1e19;
-  padding: 15px;
-  transition: all 2s ease;
+  max-width: 60%;
+  color: #fff;
+  padding: 1rem;
 }
 
 .about-me p {
-  font-size: 18px;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
-.about-me button {
-  width: 300px;
+.about-me ul {
+  padding-top: 3rem;
+  list-style: none;
 }
 
-.skills h3 {
-  text-decoration: underline;
-}
-
-.skills {
-  transition: all 2s ease;
+.about-me ul li {
+  padding: 0.7rem;
 }
 
 /**** PROJECT SECTION ****/
 
-#section3 header {
-  margin-top: 15%;
+#section3 {
+  background-color: #121212d8;
+}
+
+#section3 h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 2rem;
+  color: #fff;
+}
+
+#section3 .underline {
+  margin: auto;
 }
 
 .project-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 15%;
-  transition: all 4s ease;
+  padding: 3rem 0;
 }
 
 .project {
@@ -182,6 +204,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 
 .project p {
@@ -189,19 +212,29 @@ h2 {
 }
 
 .project h3 {
-  font-size: 25px;
+  font-size: 2rem;
 }
 
 .project img {
-  height: 200px;
-  width: 200px;
+  width: 15rem;
 }
 
 /*****  CONTACT *****/
 
 #section4 {
-  background-color: #1f1e19;
+  background-color: #131313;
   color: white;
+}
+
+#section4 h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 2rem;
+  color: #fff;
+}
+
+#section4 .underline {
+  margin: auto;
 }
 
 #section4 h3 {
@@ -209,32 +242,36 @@ h2 {
   font-weight: 300;
   font-style: italic;
   line-height: 1.8;
-}
-
-.contact-wrraper {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 15%;
+  padding: 2rem 1rem;
 }
 
 .contacts {
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 0;
 }
 
 .contacts a {
-  color: white;
-  text-decoration: underline;
-  margin-left: 5px;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  transition: all 0.5s ease-out;
 }
 
 .contacts a:hover {
-  text-decoration: none;
+  background: #878686;
+  color: #1b1a19;
+  border: 3px solid #1b1a19;
 }
 
 /* form email */
 
 form {
-  width: 40%;
+  width: 30rem;
+  margin: auto;
+  padding-bottom: 3rem;
 }
 form input,
 form select,
@@ -309,16 +346,16 @@ form select {
 /***** FOOTER *******/
 
 footer {
-  background-color: #1f1e19;
+  background-color: #0c0c0c;
   color: white;
-  padding-bottom: 2%;
+  padding-bottom: 1rem;
 }
 
 footer span a {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
+  padding-left: 1rem;
   text-decoration: underline;
-  margin-bottom: 5px;
 }
 
 footer p {
@@ -326,4 +363,187 @@ footer p {
   margin: 0;
   font-family: Lora;
   font-style: italic;
+}
+
+/**** MEDIA QUERIES  *****/
+
+@media screen and (max-width: 800px) {
+  body {
+    letter-spacing: 0;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  .header ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    padding-left: 0px;
+  }
+
+  .floating-div-box {
+    max-width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .floating-div-box p {
+    font-size: 1rem;
+    padding-top: 3rem;
+  }
+
+  .floating-div-box h2 {
+    text-align: center;
+  }
+
+  .floating-div-box button {
+    z-index: 2;
+  }
+
+  #section2 {
+    height: 100%;
+  }
+
+  #section2 h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #section2 .underline {
+    margin: auto;
+  }
+
+  .about-me-wrapper {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  .about-me {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+
+  .about-me p {
+    font-size: 1rem;
+  }
+
+  .skills {
+    text-align: center;
+  }
+
+  .skills h3 {
+    font-size: 1.5rem;
+  }
+
+  #section3 {
+    height: auto;
+  }
+
+  .project-wrapper {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+  }
+
+  .project {
+    width: 100%;
+    margin: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  #section4 {
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+
+  #section4 h3 {
+    font-size: 1rem;
+  }
+
+  form {
+    width: 70%;
+    padding-top: 3em;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  footer {
+    text-align: center;
+    display: block;
+    padding-top: 2rem;
+    resize: vertical;
+  }
+
+  footer p {
+    padding-top: 1rem;
+  }
+
+  footer span {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .floating-div-box {
+    top: 20%;
+    bottom: 25%;
+  }
+  .floating-div-box p {
+    padding-top: 3rem;
+  }
+
+  #section2 h2,
+  #section3 h2,
+  #section4 h2 {
+    font-size: 2rem;
+  }
+
+  .underline {
+    width: 100px;
+  }
+
+  .about-me-wrapper img {
+    width: 60%;
+  }
+
+  .project img {
+    width: 10rem;
+  }
+
+  .contacts {
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+  .contacts a {
+    padding: 0.5rem;
+  }
 }
