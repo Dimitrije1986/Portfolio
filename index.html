@@ -50,7 +50,7 @@
               <br /><br />
               I'll always seek opportunities to be inspired, to work hard for
               worthwhile things, and to be around people that bring out the best
-              in me.
+              of me.
               <br /><br />
               Besides that, I'm enjoying in traveling, good books, rock music,
               football, fabulous food, time with family, and beer with friends.
@@ -102,37 +102,24 @@
         Feel free to leave a friendly message here.
       </h3>
 
-      <form action="https://formspree.io/f/xjvzjjnq" method="POST">
-        <label>
-          Name:
-          <input
-            class="clean-area"
-            type="text"
-            onfocus="this.value=''"
-            name="name"
-            required
-          />
-        </label>
-        <label>
-          Your email:
-          <input
-            class="clean-area"
-            type="email"
-            onfocus="this.value=''"
-            name="email"
-            required
-          />
-        </label>
-        <label>
-          Your message:
+      <div>
+        <form action="https://formspree.io/f/xjvzjjnq" method="POST">
+          <label for="name">Name: </label>
+          <input type="text" onfocus="this.value=''" name="name" required />
+
+          <label for="email">Your email: </label>
+          <input type="email" onfocus="this.value=''" name="email" required />
+
+          <label>Your message: </label>
           <textarea
-            class="clean-area"
             name="message"
             placeholder="Hi there! 🖐"
+            onfocus="this.value=''"
           ></textarea>
-        </label>
-        <button type="submit">Send</button>
-      </form>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
 
       <div class="contacts">
         <a
@@ -155,7 +142,7 @@
         <a href="#section1">Back to top &#8682;</a>
       </span>
 
-      <p>Dimitrije Krnic &copy;2022</p>
+      <p>Dimitrije Krnic &copy; 2022</p>
     </footer>
 
     <script src="script.js"></script>

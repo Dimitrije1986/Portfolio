@@ -14,9 +14,8 @@ btn.addEventListener("click", (e) => {
 
 // clear input fields
 
-let submit = document.querySelector("#section4 button");
-let textArea = document.querySelectorAll(".clean-area");
-
-submit.addEventListener("click", (e) => {
-  textArea.forEach((field) => (field.value = ""));
-});
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName("form")) {
+    form.reset();
+  }
+};
